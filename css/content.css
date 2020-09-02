@@ -1,0 +1,143 @@
+            body {
+                width: 1865px;
+                height: 1137px;
+                font-family: 'Montserrat', sans-serif;
+                background-color: #444054;
+                color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .wrapper {
+                width: 1370px;
+                height: 810px;
+                background-image: url(../images/fire-horse-2492947_1920.jpg);
+                background-size: cover;
+                box-shadow: 0px 0px 64px 43px rgba(0, 0, 0, 1);
+            }
+            /* PRZYKŁAD CLIP-PATH DLA ZDJĘCIA W TLE */
+            /* .wrapper {
+                width: 1370px;
+                height: 810px;
+                box-shadow: 0px 0px 64px 43px rgba(0, 0, 0, 1);
+                position: absolute;
+            }
+            
+            .clip-path {
+                width: inherit;
+                height: inherit;
+                background-image: url(../images/fire-horse-2492947_1920.jpg);
+                background-size: cover;
+                position: absolute;
+                z-index: -1;
+                clip-path: polygon(100% 0, 0 100%, 100% 100%);
+            } */
+            
+            .header .wrapper-logo {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+            
+            .logo-img {
+                /* 85px width; 40px height*/
+                width: 100px;
+                height: auto;
+            }
+            
+            .logo-slogan {
+                font-size: 17px;
+            }
+            
+            .menu>ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                list-style-type: none;
+                width: 500px;
+                padding: 0;
+            }
+            
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: white;
+                width: 140px;
+                padding: 0;
+                /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+            }
+            
+            .dropdown-content .dropdown-content-link {
+                color: black;
+                text-transform: uppercase;
+                padding: 10px;
+            }
+            
+            .dropdown-content .dropdown-content-link:hover {
+                background: grey;
+                color: yellow;
+            }
+            
+            .dropdown:hover .dropdown-content {
+                display: flex;
+                flex-direction: column;
+                /* color: black; */
+            }
+            
+            .header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 25px 45px;
+            }
+            
+            .main {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 140px 0 0 0;
+            }
+            
+            .main-h1 {
+                font-size: 60px;
+            }
+            
+            .main-q {
+                text-transform: uppercase;
+                font-weight: 500;
+            }
+            
+            .contact {
+                width: 190px;
+                height: 55px;
+                border: none;
+                border-radius: 100px;
+                background: #F7A484;
+                color: #fff;
+                /* font-size: 12px; */
+                font-weight: 700;
+                margin: 105px 0 0 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                animation: contact 3s linear infinite;
+            }
+            
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+            
+            @keyframes contact {
+                from {
+                    background-color: #F7A484;
+                    color: white;
+                    font-size: initial;
+                }
+                to {
+                    background-color: yellow;
+                    color: black;
+                    font-size: 25px;
+                }
+            }
